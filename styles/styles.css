@@ -1,0 +1,300 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* ********************************REMOVED FOR MOBILE****************************** */
+.searchnsubmit , button, .btn , ul , .layerone p, .navlink {
+  display: none;
+}
+/* ********************************************************************************* */
+
+nav, nav a {
+  text-align: center;
+  background-color: black;
+  color: white;
+  height: 7vh;
+  padding-top: 1.4vh;
+  letter-spacing: 1vw;
+  text-decoration: none;
+}
+
+.layertwo li {
+  background-color: none;
+}
+/* ************************ ^^^^^^ NAV SECTION ^^^^^ *********************************** */
+
+main h1{
+  text-align: center;
+  margin-top: 15vh;
+  color: white;
+}
+main, section {
+  height: 30vh;
+}
+
+main{
+ position: relative;
+ height: 35vh;
+ background-image: url("/styles/images/luca-bravo-8x_fFNrmeDk-unsplash.jpg");
+ background-size: cover;
+ background-repeat: no-repeat;
+ display: flex;
+ justify-content: center;
+ text-align: center;
+}
+
+main::before, .layerone::before , .layertwo::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(143, 134, 134, 0.381);
+}
+
+main:hover::before , .layerone:hover::before, .layertwo:hover::before {
+  background-color: rgba(143, 134, 134, 0.1);
+
+}
+
+main h1:hover, .layerone h2:hover, .layertwo h2:hover, .layertwo a:hover, nav a:hover {
+  text-shadow: 0px 0px 5px white;
+}
+
+nav a:hover {
+  text-shadow: 0px 7px 18px white;
+}
+
+main h1, .layerone h2 , .layerone p, .layertwo h2, a, .searchnsubmit , .location {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  text-align: center;
+}
+
+main:hover {
+  background-color: rgba(0, 0, 0, 1)
+}
+
+/* ************************************ ^^^^ Welcome to Giselles****************************** */
+
+.layerone, .layertwo {
+  background-image: url("/styles/images/armando-ascorve-morales-ypZI_CA91M0-unsplash.jpg");
+  background-size: cover;
+  height: 35vh;
+  background-repeat: no-repeat;
+  text-align: center;
+  position: relative;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+/* ******************************** ^^^^ Discover our Story ^^^^^^^^^^^ ********************************** */
+
+.layertwo {
+  background-image: url("/styles/images/pablo-merchan-montes-Orz90t6o0e4-unsplash.jpg");
+}
+
+/* ******************^^^^^^^^^^^^^^^^^ SPECIALTY CUISINE ^^^^^^^^^^^^^   *************** */
+
+footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  padding: 1vh 2vw;
+  
+}
+
+footer a, h6 {
+  list-style: none;
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  letter-spacing: .5vw;
+  font-weight: 600;
+  font-size: 4.2vw;
+  padding-top: 0vh;
+}
+
+.fa-brands {
+  padding-right: 1vw;
+  margin-left: 1vw;
+  font-size: 3vw;
+  
+}
+
+/* ********************************** FOOTER ******************************************** */
+/* ********************************** MOBILE**********************************************
+/********* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^   ********** */ 
+
+@media (min-width: 768px) {
+  .layerone, .layerone p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;  
+  }
+  .layerone h2 {
+    font-size: 2.5rem;
+    font-weight: 100;
+    border-bottom: 1px solid orange;
+    box-shadow: 0px 17px 34px -16px orange;
+  }
+  
+  .layerone p {
+    font-size: 1.1rem;
+    line-height: 4vh;
+  }
+  .layertwo , ul , .layertwo a {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    list-style: none;
+    text-decoration: none;
+    padding: 3vw;
+    font-size: 3vw;
+    font-weight: 700;
+  }
+
+  .layertwo a {
+    padding: 0 2vw 2vw 3vw;
+    
+  }
+
+
+  .layertwo a:hover {
+    border-bottom: 1px solid orange;
+    box-shadow: 0px 17px 34px -16px orange;
+  }
+  
+  footer a , h6, .fa-brands {
+    font-size: 1.4rem;
+    line-height: 2.7rem;
+  }
+ 
+}
+
+/* *************** ^^^^^^^^^^^^^^^^^^^ TABLET ^^^^^^^^^^^^^^^^^^^^^^ ************************ */
+/* ******************************************************************************************* */
+
+@media (min-width: 1024px) {
+    nav {
+      height: 12vh;
+      padding: 4vh;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .navlink, nav h1, a {
+      display: flex;
+      flex-direction: row;
+      text-decoration: none;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      border: none;
+      list-style: none;
+    }
+
+    nav h1 {
+      margin: 0 5vw;
+    }
+
+    .navlink {
+      font-size: 1.2rem;
+    }
+
+  main, main h1, .searchnsubmit {
+    font-size: 3rem;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  main h1 {
+    letter-spacing: 1rem;
+    font-size: 5rem;
+  }
+
+  main, .layerone, .layertwo {
+    height: 80vh;
+  }
+
+  /* ******************************** MAIN PIC /H1 / NAV ************ */
+  .searchnsubmit {
+    height: 3.2vh;
+    border: none;
+    color: #fff;
+    width: 100%;;
+
+  }
+  .location {
+    display: flex;
+    width: 5vw;
+    height: 4vh;
+    font-weight: 600;
+    padding-top: 1vh;
+    padding-left: .4vw;
+    background-color: orange;
+    color: #fff;
+    border: none;
+  }
+
+  input {
+    border: none;
+    width: 28vw;
+    border-radius: 4px;
+  }
+  /* *************************** SEARCH BAR AND BUTTON ******************* */
+ /* ************************* LAPTOP MAIN  WELCOME TO GISELLES******************************* */
+
+
+ .layerone{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+ }
+ .layerone p {
+  width: 60%;
+  font-size: 3vh;
+ }
+
+ .layerone h2 {
+  font-size: 5vh;
+  margin-left: 3vw;
+ }
+
+ /* ************************ LAPTOP LAYERONE OUR STORY ********************************* */
+
+ .layertwo a {
+  height: 7vh;
+  width: 14vw;
+ }
+ 
+footer a , h6 {
+  font-size: 1.5rem;
+  line-height: 4rem;
+}
+
+
+.fa-brands {
+  padding-right: 1vw;
+  margin-left: 1vw;
+  font-size: 2vw;
+  
+}
+
+}
+
+
